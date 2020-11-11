@@ -1,0 +1,351 @@
+$a: 100%/3;
+* {
+	// box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+li {
+	list-style-type: none;
+}
+.title {
+	font-size: 30px;
+	line-height: 36px;
+	color: #445161;
+	text-align: center;
+}
+.title-md {
+	font-size: 24px;
+	line-height: 30px;
+	color: #445161;
+}
+.text {
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+}
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.product {
+	background-color: #445161;
+	padding: 50px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-title {
+		font-size: 60px;
+		line-height: 1;
+		color: #ffffff;
+		margin-bottom: 19px;
+	}
+	&-list {
+		font-size: 20px;
+		line-height: 36px;
+		color: #ffffff;
+		list-style-image: url(../img/check-icon.png);
+		list-style-position: inside;
+	}
+	&-img {
+		object-fit: contain;
+		align-self: flex-start;
+	}
+}
+.about {
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	&-title {
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	&-text {
+		max-width: 654px;;
+	}
+	&-text:nth-child(2) {
+		margin-bottom: 20px;
+	}
+	&-img {
+		object-fit: contain;
+	}
+}
+.dignity {
+	background-color: #f5f5f5;
+	padding: 50px 50px 15px;
+	&-title {
+		margin-bottom: 30px;
+	}
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&-item {
+			display: flex;
+			max-width: 568px;
+			margin-bottom: 35px;
+		}
+		&-item::before {
+			content: url(../img/plus-icon.png);
+			display:block;
+			margin-right:9px;
+			padding-top:5px;
+		}
+	}
+
+}
+.screenshots {
+	padding: 50px 50px 20px;
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-title {
+		margin-bottom: 30px;
+	}
+	.screenshot {
+		display: flex;
+		margin-bottom: 30px;
+		&-title {
+			margin-bottom: 15px;
+		}
+		&-img {
+			object-fit: contain;
+			margin-right: 15px;
+		}
+		&-text {
+			max-width: 360px;
+		}
+	}
+}
+.reviews {
+	background-color: #f5f5f5;
+	padding: 50px;
+	&-title {
+		margin-bottom: 30px;
+	}
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&-item {
+			display: flex;
+			.reviews-img {
+				object-fit: contain;
+				align-self: flex-start;
+				margin-right: 16px;
+			}
+		}
+		&-item:first-child, &-item:nth-child(2) {
+			margin-bottom: 24px;
+		}
+	}
+	.review {
+		background-image: url(../img/bg-review.png);
+		padding: 16px 20px 16px 27px;
+		&-text {
+			max-width: 437px;
+			font-size: 14px;
+			line-height: 18px;
+			font-style: italic;
+			color: #333333;
+			margin-bottom: 15px;
+		}
+		&-author {
+			font-size: 14px;
+			line-height: 18px;
+			color: #989898;
+		}
+	}
+}
+.buyoffers {
+	padding: 50px;
+	&-title {
+		margin-bottom: 30px;
+	}
+	&-list {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+		&-item {
+			margin-right: 45px;
+			width: 300px;
+			background-color: #445162;
+			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
+			.buyoffer {
+				&-title {
+					color: #fff;
+					padding: 16px 0 16px;
+					text-align: center;
+				}
+				&-price {
+					font-size: 40px;
+					line-height: 30px;
+					color: #445162;
+					background-color: #fff;
+					padding: 17px;
+					text-align: center;
+					border: 2px solid #445162;
+				}
+				&-list {
+					padding: 20px;
+					list-style-position: inside;
+					&-item {
+						color: #fff;
+						list-style-type: decimal;
+						font-size: 14px;
+						line-height: 24px;
+					}
+				}
+				&-button {
+					color: #445162;
+					font-size: 18px;
+					line-height: 18px;
+					font-weight: 700;
+					background-color: #fff;
+					padding-top:13px;
+					padding-bottom: 13px;
+					margin: 20px;
+					border: none;
+					border-radius: 5px;
+					align-self: center;
+					display: block;
+					width: 100%-40/3;
+				}
+			}
+		}
+		&-item:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.contacts {
+	background-color: #445162;
+	padding: 50px;
+	&-title {
+		color: #fff;
+		margin-bottom: 30px;
+	}
+	&-wrapper {
+		display: flex;
+		justify-content: center;
+		.form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-right: 45px;
+			&-area {
+				width: 500px;
+				height: 40px;
+				border: 1px solid white;
+				border-radius: 5px;
+				margin-bottom: 20px;
+				padding-left: 10px;
+				color:rgb(104, 122, 65);
+			}
+			&-message {
+				height: 170px;
+				padding-top: 8px;
+			}
+			&-area::placeholder {
+				font-size: 16px;
+				line-height: 24px;
+				color: #445162;
+			}
+			&-area:focus {
+				outline: none;
+				background-color: rgb(141, 175, 219);
+			}
+
+			&-btn {
+				width: 140px;
+				height: 40px;
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #445162;
+				border: none;
+				border-radius: 5px;
+			}
+		}
+		.contacts-col2 {
+			.contacts-list{
+				margin-bottom: 32px;
+				&-item {
+					margin-bottom: 20px;
+					&-link {
+						color: #fff;
+						text-decoration: none;
+						display: flex;
+						align-items: center;
+
+						.icon {
+							margin-right: 5px;
+						}
+						.icon1 {
+							width: 24px;
+							height: 26px;
+							display: block;
+							background-image: url(../img/skype_icon_319.png);
+						}
+						.icon2 {
+							width: 26px;
+							height: 26px;
+							display: block;
+							background-image: url(../img/icq_icon_324.png);
+						}
+						.icon3 {
+							width: 22px;
+							height: 22px;
+							display: block;
+							background-image: url(../img/email_icon_332.png);
+						}
+						.icon4 {
+							width: 24px;
+							height: 23px;
+							display: block;
+							background-image: url(../img/phone_icon_337.png);
+						}
+					}
+				}
+			}
+			.socials-list {
+				display: flex;
+				&-item {
+
+					.socials-link {
+						margin-right: 6px;
+						width: 43px;
+						height: 42px;
+						display: block;
+						background-image: url(../img/socials.png);
+					}
+					.socials-link1 {
+						background-position: 0px;
+					}
+					.socials-link2 {
+						background-position: -49px;
+					}
+					.socials-link3 {
+						background-position: -98px;
+					}
+					.socials-link4 {
+						background-position: -148px;
+					}
+					.socials-link5 {
+						background-position: -197px;
+					}
+				}
+			}
+		}
+	}
+}
